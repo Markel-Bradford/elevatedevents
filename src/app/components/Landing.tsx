@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const Landing = () => {
@@ -13,11 +14,12 @@ const Landing = () => {
 }
 
   return (
-    isVisible && (
+
     <div onClick={handleClick} className={`${click ? 'animate-fadeout':'fixed bg-black w-full h-full z-[1001] top-0 cursor-pointer'}`}>
-      <video src='/Elevated.mp4' autoPlay muted className='fixed z-[1001] object-contain w-full h-full top-12 my-0 mx-auto'/>
+      <Link href="/home">
+      <video src='/ElevatedEvents.mp4' autoPlay muted className='fixed z-[1001] object-contain w-full h-full'/>
+        </Link>
     </div>
-  )
   )
 }
 

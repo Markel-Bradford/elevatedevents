@@ -16,7 +16,7 @@ const config: Config = {
         fadeout: "fadeout 0.8s forwards"
       },
       gridTemplateColumns: {
-        navbar: "repeat(4, auto)",
+        navbar: "repeat(3, auto)",
         cards: "repeat(auto-fit,minmax(250px, 1fr))",
       },
       content: {
