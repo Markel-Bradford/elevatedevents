@@ -19,13 +19,13 @@ const cardData: Product[] = [
     path: "/silver"
   },
   {
-    src: "/mensskinnys.jpeg",
+    src: "",
     text: "Gold - $1275",
     description: "Upgrade your event with our Gold Package, featuring premium decorations and exceptional services designed to captivate and delight your guests. Ideal for creating a refined and unforgettable atmosphere.",
     path: "/gold"
   },
   {
-    src: "/womensdenim.jpg",
+    src: "",
     text: "Platinum - $2500",
     description: "Elevate your event with our most luxurious Platinum Package, featuring the highest-end decorations and services designed to impress and astonish all of your guests. Perfect for those seeking the ultimate in opulence and grandeur.",
     path: "/platinum"

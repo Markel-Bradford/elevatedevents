@@ -55,7 +55,7 @@ const Carditems: React.FC<CardItemsProps> = (props) => {
         </figure>
         <div className="flex w-full justify-around items-center gap-4">
           <Link
-            className="flex h-14 max-lg:h-[40px] items-center justify-center w-2/5 border-solid border-black border-2 text-white max-lg:text-sm bg-black hover:bg-zinc-700 z-50"
+            className="flex h-14 max-lg:h-[40px] text-center items-center justify-center w-3/5 border-solid border-black border-2 text-white max-lg:text-sm bg-black hover:bg-zinc-700 z-50"
             href={props.path}
           >
             View Product

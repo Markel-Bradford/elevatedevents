@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
 
@@ -17,7 +18,7 @@ const Landing = () => {
 
     <div onClick={handleClick} className={`${click ? 'animate-fadeout':'fixed bg-black w-full h-full z-[1001] top-0 cursor-pointer'}`}>
       <Link href="/home">
-      <video src='/ElevatedEvents.mp4' autoPlay muted className='fixed z-[1001] object-contain w-full h-full'/>
+      <Image src='/ElevatedEvents.gif' width={1080} height={1920} alt='Elevated Events Logo' className='fixed z-[1001] object-contain w-full h-full'/>
         </Link>
     </div>
   )
