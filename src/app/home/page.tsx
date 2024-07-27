@@ -1,11 +1,14 @@
 import React from 'react'
 import PackageCards from '../components/PackageCards'
+import BalloonCards from '../components/BalloonCards'
+import Hero from '../components/Hero'
 
 const page = () => {
   return (
     <div>
-          <h1 className="text-7xl text-center mt-12 ">Elevated Events</h1>
+          <Hero />
           <PackageCards />
+          <BalloonCards />
     </div>
   )
 }

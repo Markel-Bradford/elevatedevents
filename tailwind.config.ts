@@ -1,3 +1,4 @@
+import { Kalnia } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        kalnia: ['var(--font-kalnia)']
+      },
       animation: {
         fadein: "fadein 0.7s linear",
         slideandfade: "slideandfade 0.8s linear",

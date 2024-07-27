@@ -18,7 +18,8 @@ const Landing = () => {
 
     <div onClick={handleClick} className={`${click ? 'animate-fadeout':'fixed bg-black w-full h-full z-[1001] top-0 cursor-pointer'}`}>
       <Link href="/home">
-      <Image src='/ElevatedEvents.gif' width={1080} height={1920} alt='Elevated Events Logo' className='fixed z-[1001] object-contain w-full h-full'/>
+      <Image src='/ElevatedEvents.gif' width={1920} height={1080} alt='Elevated Events Logo' className='flex items-center justify-center z-[1001] object-contain w-full h-full mx-auto max-lg:hidden'/>
+      <Image src='/ElevatedEventsMobile.gif' width={1080} height={1350} alt='Elevated Events Logo mobile' className='flex items-center justify-center z-[1001] object-contain w-full h-full mx-auto lg:hidden' />
         </Link>
     </div>
   )

@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Kalnia } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const kalnia = Kalnia({ 
+  subsets: ["latin"], 
+  variable: '--font-kalnia'
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={kalnia.variable}>
       <Navbar />
       {children}</body>
     </html>

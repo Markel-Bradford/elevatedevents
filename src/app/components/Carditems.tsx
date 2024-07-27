@@ -31,7 +31,7 @@ const Carditems: React.FC<CardItemsProps> = (props) => {
     <li
       ref={ref}
       className={classNames(
-        "relative flex flex-col shadow-[0_8px_12px_rgba(255,255,255,0.35)] overflow-hidden no-underline bg-slate-100",
+        "relative flex flex-col shadow-[0_8px_12px_rgba(200,200,200,0.3)] overflow-hidden no-underline bg-slate-100",
         { "animate-fadein": inView, "opacity-0": !inView }
       )}
     >
@@ -44,21 +44,13 @@ const Carditems: React.FC<CardItemsProps> = (props) => {
         <figure
           className="relative w-full pb-12 text-black text-lg max-lg:text-base overflow-hidden">
           {props.description}
-          {/* <Image
-            width={500}
-            height={350}
-            priority
-            src={props.src}
-            alt="Featured photos"
-            className="absolute top-0 right-0 bottom-0 left-0 block w-full h-full object-cover object-center transition-all"
-          /> */}
         </figure>
         <div className="flex w-full justify-around items-center gap-4">
           <Link
-            className="flex h-14 max-lg:h-[40px] text-center items-center justify-center w-3/5 border-solid border-black border-2 text-white max-lg:text-sm bg-black hover:bg-zinc-700 z-50"
+            className="flex h-14 max-lg:h-[40px] text-center items-center justify-center w-2/4 border-solid border-black border-2 text-white max-lg:text-sm bg-black hover:bg-zinc-700 z-50"
             href={props.path}
           >
-            View Product
+            View More
           </Link>
         </div>
       </div>

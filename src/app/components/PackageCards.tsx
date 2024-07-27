@@ -15,26 +15,24 @@ const cardData: Product[] = [
   {
     src: "",
     text: "Silver - $675",
-    description: "Enhance your event with our Silver Package, offering elegant decorations and top-tier services to ensure a memorable experience for you and your guests. Perfect for those seeking sophistication and style without compromise.",
+    description: "Enhance your event with basic tablecloths, simple centerpieces (candles or small floral arrangements), and balloons in your color scheme. Enjoy seasonal floral centerpieces and basic ambient lighting. Setup and teardown are included for a hassle-free experience.",
     path: "/silver"
   },
   {
     src: "",
     text: "Gold - $1275",
-    description: "Upgrade your event with our Gold Package, featuring premium decorations and exceptional services designed to captivate and delight your guests. Ideal for creating a refined and unforgettable atmosphere.",
+    description: "Elevate your event with enhanced tablecloths, themed decor, elegant centerpieces (larger floral arrangements or lanterns), and custom floral arrangements. Themed lighting and additional decor like chair covers and backdrops are included. Setup and teardown are handled by our team.",
     path: "/gold"
   },
   {
     src: "",
     text: "Platinum - $2500",
-    description: "Elevate your event with our most luxurious Platinum Package, featuring the highest-end decorations and services designed to impress and astonish all of your guests. Perfect for those seeking the ultimate in opulence and grandeur.",
+    description: "Transform your event with luxury tablecloths, custom-themed decor, premium centerpieces, and high-end floral arrangements. Enjoy professional lighting design, additional decor like drapery and chandeliers, and extras such as custom signage and specialty items. Setup and teardown are included.",
     path: "/platinum"
   },
 ];
 
 const PackageCards: React.FC = () => {
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [isProductPage, setIsProductPage] = useState(false)
 
   useEffect(() => {
     // Preload all images
@@ -49,7 +47,8 @@ const PackageCards: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto my-0 p-16 max-lg:px-8 ">
+    <div className="relative mx-auto my-0 py-16 px-8 max-lg:px-8 bg-black">
+      <h1 className="text-white font-bold text-center text-[9.5vw] lg:text-[4.5vw] mb-12">Event Packages</h1>
       <div className="w-4/5 max-lg:w-full mx-auto my-0">
         <div className="relative mt-6 max-lg:mt-0 mb-11 grid grid-cols-cards gap-12">
           {cardData.map((card, index) => (
