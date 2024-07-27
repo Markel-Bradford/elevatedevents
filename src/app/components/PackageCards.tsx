@@ -13,21 +13,21 @@ interface Product {
 
 const cardData: Product[] = [
   {
-    src: "/abstractshirt.jpeg",
-    text: "Silver",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    src: "",
+    text: "Silver - $675",
+    description: "Enhance your event with our Silver Package, offering elegant decorations and top-tier services to ensure a memorable experience for you and your guests. Perfect for those seeking sophistication and style without compromise.",
     path: "/silver"
   },
   {
     src: "/mensskinnys.jpeg",
-    text: "Gold",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    text: "Gold - $1275",
+    description: "Upgrade your event with our Gold Package, featuring premium decorations and exceptional services designed to captivate and delight your guests. Ideal for creating a refined and unforgettable atmosphere.",
     path: "/gold"
   },
   {
     src: "/womensdenim.jpg",
-    text: "Platinum",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    text: "Platinum - $2500",
+    description: "Elevate your event with our most luxurious Platinum Package, featuring the highest-end decorations and services designed to impress and astonish all of your guests. Perfect for those seeking the ultimate in opulence and grandeur.",
     path: "/platinum"
   },
 ];
@@ -49,8 +49,8 @@ const PackageCards: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto my-0 p-16">
-      <div className="w-full mx-auto my-0">
+    <div className="relative mx-auto my-0 p-16 max-lg:px-8 ">
+      <div className="w-4/5 max-lg:w-full mx-auto my-0">
         <div className="relative mt-6 max-lg:mt-0 mb-11 grid grid-cols-cards gap-12">
           {cardData.map((card, index) => (
             <Carditems
