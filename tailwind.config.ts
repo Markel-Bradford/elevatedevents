@@ -1,4 +1,3 @@
-import { Kalnia } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -17,7 +16,8 @@ const config: Config = {
         slideandfade: "slideandfade 0.8s linear",
         slideup: "slideup 0.3s linear",
         fade: "fade 0.8s linear",
-        fadeout: "fadeout 0.8s forwards"
+        fadeout: "fadeout 0.8s forwards",
+        pulse: "pulse 2s 2s linear infinite"
       },
       gridTemplateColumns: {
         navbar: "repeat(3, auto)",
@@ -50,6 +50,13 @@ const config: Config = {
           "0%" : { opacity: "1"},
           "100%": {opacity: "0"},
         },
+        pulse: {
+          "0%": {transform: "scale(1)"},
+          "25%": {transform: "scale(1.1)"},
+          "50%": {transform: "scale(1)"},
+          "75": {transform: "scale(1.1)"},
+          "100%": {transform: "scale(1)"},
+        }
       },
     },
   },
