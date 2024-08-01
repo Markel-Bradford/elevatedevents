@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         kalnia: ['var(--font-kalnia)']
       },
+      translate: {
+        slides: "translate(-${currentIndex * 100}%)"
+      },
       animation: {
         fadein: "fadein 0.7s linear",
         slideandfade: "slideandfade 0.8s linear",
