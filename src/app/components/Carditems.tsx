@@ -9,6 +9,7 @@ import Link from "next/link";
 interface Product {
   src: string;
   text: string;
+  subtext: string;
   description: string;
   path: string
 }
@@ -17,6 +18,7 @@ interface CardItemsProps {
   product: Product;
   src: string;
   text: string;
+  subtext: string;
   description: string;
   path: string;
 }
@@ -36,10 +38,11 @@ const Carditems: React.FC<CardItemsProps> = (props) => {
       )}
     >
       <div className="flex flex-col w-full h-full border-amber-400 border-solid border-4 no-underline justify-center items-center p-5">
-      <div className="pt-5 pb-10 ">
-          <h5 className="text-black text-2xl font-bold overflow-hidden text-center">
+      <div className="pt-5 pb-10 text-center">
+          <h5 className="text-black text-2xl font-bold overflow-hidden ">
             {props.text}
           </h5>
+          <h5 className="text-lg font-semibold text-black mt-1">{props.subtext}</h5>
         </div>
         <figure
           className="relative w-full pb-12 text-black text-lg max-lg:text-base overflow-hidden">
