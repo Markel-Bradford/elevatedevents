@@ -93,7 +93,7 @@ const Page: React.FC = () => {
         </div>
         <div className="w-1/2 max-lg:w-full h-full flex flex-col px-12 max-lg:pt-0 pt-6
         max-lg:pb-12 max-lg:px-0">
-          <ul className="leading-10 list-none text-3xl max-lg:text-lg">
+          <ul className="px-3 list-disc leading-10 text-3xl max-lg:text-lg">
             <li className="pb-3 max-lg:pb-1.5">
               <span className="font-bold">Decorations:</span> Basic tablecloths
               in a choice of colors, simple centerpieces (e.g., candles or small
