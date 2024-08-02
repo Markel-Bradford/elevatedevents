@@ -52,7 +52,7 @@ const BalloonCards: React.FC = () => {
 
   return (
     <div className="relative mx-auto my-0 pt-0 pb-16 px-8 max-lg:px-8 bg-black">
-      <h1 className="text-white font-bold text-center text-[9.5vw] lg:text-[4.5vw] mb-12 ">Balloon Packages</h1>
+      <h1 className="text-white font-bold text-center text-4xl lg:text-[3.8vw] mb-12 ">Balloon Packages</h1>
       <div className="w-4/5 max-lg:w-full mx-auto my-0">
         <div className="relative mt-6 max-lg:mt-0 mb-11 grid grid-cols-cards gap-12">
           {cardData.map((card, index) => (
