@@ -33,11 +33,11 @@ const Page: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(toNextSlide, 8000);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentIndex]);
 
   return (
     <div>
-      <div className="max-w-full lg:min-h-[100vh] max-lg:min-h-[45vh] flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
+      <div className="max-w-full xl:min-h-[100vh] md:min-h-[60vh] max-md:min-h-[45vh]  flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
         <div className="fixed justify-end w-[100%] lg:w-full">
           <Image
             width={1920}
@@ -60,10 +60,10 @@ const Page: React.FC = () => {
           </h3>
         </div>
       <div className="py-24 px-6 h-full bg-black flex items-center justify-center relative 
-      max-lg:flex-col-reverse max-lg:pt-0 max-lg:pb-12">
+      max-xl:flex-col-reverse max-lg:pt-0 max-lg:pb-12">
         <div
           className="flex w-1/2 h-[600px] flex-nowrap overflow-hidden translate-x-slides
-        max-lg:w-full max-lg:h-full">
+        max-xl:w-full max-xl:h-1/2">
           {silverImgs.map((item, index) => {
             return (
               <Image
@@ -80,20 +80,20 @@ const Page: React.FC = () => {
           })}
           <button
             onClick={toPrevSlide}
-            className="absolute text-5xl left-0 top-[40%] transform translate-y-1/2 bg-opacity-50 text-white p-2 hover:text-amber-400 duration-200
-          max-lg:text-3xl max-lg:left-6 max-lg:top-[68%]">
+            className="absolute text-5xl left-0 top-1/2 font-extrabold -translate-y-1/2 opacity-60 bg-black text-gray-200 p-2 hover:text-amber-400 duration-200
+          max-lg:text-2xl max-xl:text-7xl max-xl:left-8 max-sm:top-[74%] max-xl:top-[64%]">
             &#10094; {/* Left arrow */}
           </button>
           <button
             onClick={toNextSlide}
-            className="absolute text-5xl right-1/2 top-[40%] transform translate-y-1/2 bg-opacity-50 text-white p-2 hover:text-amber-400 duration-200
-          max-lg:text-3xl max-lg:right-6 max-lg:top-[68%]">
+            className="absolute text-5xl right-1/2 top-1/2 font-extrabold transform -translate-y-1/2 opacity-60 bg-black text-gray-200 p-2 hover:text-amber-400 duration-200
+          max-lg:text-2xl max-xl:text-7xl max-xl:right-8 max-sm:top-[74%] max-xl:top-[64%]">
             &#10095; {/* Right arrow */}
           </button>
         </div>
-        <div className="w-1/2 max-lg:w-full h-full flex flex-col px-12 max-lg:pt-0 pt-6
-        max-lg:pb-12 max-lg:px-2">
-          <ul className="px-3 list-image-star leading-10 text-3xl max-lg:text-lg">
+        <div className="w-1/2 max-xl:w-full h-full flex flex-col px-12 max-xl:pt-0 pt-6
+        max-xl:pb-12 max-lg:px-2">
+          <ul className="px-3 list-image-star leading-10 text-3xl max-md:text-lg">
             <li className="pb-3 max-lg:pb-1.5">
               <span className="font-bold">Decorations:</span> Basic tablecloths
               in a choice of colors, simple centerpieces (e.g., candles or small
