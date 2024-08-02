@@ -55,12 +55,12 @@ const Page: React.FC = () => {
         </div>
       </div>
       <div className="relative bg-black">
-      <h3 className=" relative text-center text-5xl max-lg:text-3xl font-bold pt-12 pb-6">
+      <h3 className=" relative text-center text-5xl max-lg:text-3xl font-bold pt-12 max-lg:pb-6">
             What&apos;s included
           </h3>
         </div>
       <div className="py-24 px-6 h-full bg-black flex items-center justify-center relative 
-      max-lg:flex-col-reverse max-lg:pt-0 max-lg:pb-24">
+      max-lg:flex-col-reverse max-lg:pt-0 max-lg:pb-12">
         <div
           className="flex w-1/2 h-[600px] flex-nowrap overflow-hidden translate-x-slides
         max-lg:w-full max-lg:h-full">
@@ -94,21 +94,21 @@ const Page: React.FC = () => {
         <div className="w-1/2 max-lg:w-full h-full flex flex-col px-12 max-lg:pt-0 pt-6
         max-lg:pb-12 max-lg:px-0">
           <ul className="leading-10 list-none text-3xl max-lg:text-lg">
-            <li>
+            <li className="pb-3 max-lg:pb-1.5">
               <span className="font-bold">Decorations:</span> Basic tablecloths
               in a choice of colors, simple centerpieces (e.g., candles or small
               floral arrangements), and balloons in your event&apos;s color
               scheme.
             </li>
-            <li>
+            <li className="pb-3 max-lg:pb-1.5">
               <span className="font-bold">Floral Arrangements:</span> Simple
               floral centerpieces for each table, using seasonal flowers.
             </li>
-            <li>
+            <li className="pb-3 max-lg:pb-1.5">
               <span className="font-bold">Lighting:</span> Basic ambient
               lighting to enhance the atmosphere.
             </li>
-            <li>
+            <li className="pb-3 max-lg:pb-1.5">
               <span className="font-bold">Setup and Teardown:</span> Our team
               will handle the setup before the event and the teardown afterward,
               ensuring a hassle-free experience for you.
