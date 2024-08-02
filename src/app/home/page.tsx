@@ -9,10 +9,10 @@ const page = () => {
     <div>
       <Hero />
       <div className="relative lg:px-8 bg-black">
-        <h1 className="text-center max-lg:py-6 py-12 text-4xl lg:text-[3.8vw] font-bold">
+        <h1 className="font-kalnia text-center max-lg:py-6 py-12 px-3 text-4xl lg:text-[3.8vw] font-bold">
           Let us bring your event to life
         </h1>
-        <p className="leading-10 max-md:pt-0 pt-6 text-3xl max-lg:text-2xl max-md:leading-8 max-lg:px-6 max-xl:px-32 px-48">
+        <p className=" leading-10 max-md:pt-0 pt-6 text-3xl max-lg:text-2xl max-md:leading-8 max-lg:px-6 max-xl:px-32 px-48">
           Welcome to Elevated Events, where we transform your most elegant event
           dreams into unforgettable realities. Our mission is to create
           extraordinary experiences tailored to your unique vision and style,
