@@ -17,7 +17,7 @@ const silverImgs: SilverImages[] = [
   { src: "silverimgs/halloween.JPG" },
 ];
 
-const Page: React.FC<SilverImages> = () => {
+const Page: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const toNextSlide = () => {
