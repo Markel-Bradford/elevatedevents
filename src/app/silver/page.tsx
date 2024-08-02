@@ -81,19 +81,19 @@ const Page: React.FC = () => {
           <button
             onClick={toPrevSlide}
             className="absolute text-5xl left-0 top-[40%] transform translate-y-1/2 bg-opacity-50 text-white p-2 hover:text-amber-400 duration-200
-          max-lg:text-3xl max-lg:left-6 max-lg:top-[67%]">
+          max-lg:text-3xl max-lg:left-6 max-lg:top-[68%]">
             &#10094; {/* Left arrow */}
           </button>
           <button
             onClick={toNextSlide}
             className="absolute text-5xl right-1/2 top-[40%] transform translate-y-1/2 bg-opacity-50 text-white p-2 hover:text-amber-400 duration-200
-          max-lg:text-3xl max-lg:right-6 max-lg:top-[67%]">
+          max-lg:text-3xl max-lg:right-6 max-lg:top-[68%]">
             &#10095; {/* Right arrow */}
           </button>
         </div>
         <div className="w-1/2 max-lg:w-full h-full flex flex-col px-12 max-lg:pt-0 pt-6
-        max-lg:pb-12 max-lg:px-0">
-          <ul className="px-3 list-disc leading-10 text-3xl max-lg:text-lg">
+        max-lg:pb-12 max-lg:px-2">
+          <ul className="px-3 list-image-star leading-10 text-3xl max-lg:text-lg">
             <li className="pb-3 max-lg:pb-1.5">
               <span className="font-bold">Decorations:</span> Basic tablecloths
               in a choice of colors, simple centerpieces (e.g., candles or small

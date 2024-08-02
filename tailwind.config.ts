@@ -19,6 +19,9 @@ const config: Config = {
         fadeout: "fadeout 0.8s forwards",
         pulse: "pulse 2s 2s linear infinite"
       },
+      listStyleImage: {
+        star: 'url("/silverimgs/star-16.png")',
+      },
       gridTemplateColumns: {
         navbar: "repeat(3, auto)",
         cards: "repeat(auto-fit,minmax(250px, 1fr))",
