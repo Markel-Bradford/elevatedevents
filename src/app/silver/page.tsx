@@ -48,10 +48,13 @@ const Page: React.FC = () => {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="flex justify-center items-center relative w-full text-white font-kalnia animate-fade">
-          <h1 className="text-[11vw] font-bold lg:text-[7vw] text-center">
+        <div className="flex flex-col justify-center items-center relative w-full text-white font-kalnia animate-fade">
+          <h1 className="text-[9vw] font-bold lg:text-[7vw] text-center">
             Silver Package
           </h1>
+          <h2 className="text-[7vw] lg:text-[4vw] font-semibold text-center">
+            $675
+          </h2>
         </div>
       </div>
       <div className="relative bg-black">
