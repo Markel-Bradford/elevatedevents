@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <Hero />
-      <div className="relative lg:px-12 bg-black">
+      <div className="relative lg:px-8 bg-black">
         <h1 className="text-center max-lg:py-6 py-12 text-4xl lg:text-[3.8vw] font-bold">
           Let us bring your event to life
         </h1>
