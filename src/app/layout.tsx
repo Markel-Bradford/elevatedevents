@@ -3,6 +3,7 @@ import { Kalnia } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "@/ScrollToTop";
+import Footer from "./components/Footer";
 
 const kalnia = Kalnia({ 
   subsets: ["latin"], 
@@ -24,7 +25,9 @@ export default function RootLayout({
       <body className={kalnia.variable}>
         <ScrollToTop />
       <Navbar />
-      {children}</body>
+      {children}
+      <Footer />
+      </body>
     </html>
   );
 }
