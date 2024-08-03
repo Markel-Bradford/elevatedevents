@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
       <nav className="bg-black h-24 flex justify-center items-center text-xl sticky top-0 z-[1000] shadow-[0_4px_8px_rgba(255,255,255,0.2)]" >
         <div className="flex justify-center items-center h-20 max-w-[1500px] w-4/5 max-lg:justify-between font-kalnia">
-          <Link href="/" className="flex justify-self-start items-center cursor-pointer no-underline ">
+          <Link href="/home" className="flex justify-self-start items-center cursor-pointer no-underline ">
             <Image width={100} height={200} className="w-28 h-[88px]" src="/logo.png" alt="" />
           </Link>
           <div className="hidden max-lg:contents max-lg:absolute max-lg:right-5 text-3xl cursor-pointer" onClick={handleClick}>
