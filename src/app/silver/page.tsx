@@ -38,7 +38,7 @@ const Page: React.FC = () => {
   return (
     <div>
       <div className="max-w-full xl:min-h-[100vh] md:min-h-[60vh] max-md:min-h-[45vh]  flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
-        <div className="fixed justify-end w-[100%] lg:w-full">
+        <div className="fixed max-w-[1502px] justify-end w-[100%] lg:w-full">
           <Image
             width={1920}
             height={1080}

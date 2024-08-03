@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={classNames(kalnia.variable, "max-w-[1502px] mx-auto")}>
+      <body className={classNames(kalnia.variable, "max-w-[1502px] mx-auto bg-amber-300")}>
         <ScrollToTop />
       <Navbar />
       {children}
