@@ -7,9 +7,9 @@ import Image from "next/image";
 const page = () => {
 
   return (
-    <div>
+    <div className="bg-black">
       <Hero />
-      <div className="flex flex-col items-center justify-center relative lg:px-8 bg-black pb-12 min-h-[100vh]">
+      <div className="flex flex-col items-center justify-center relative lg:px-8 bg-black pb-6 min-h-[100vh]">
         <h1 className="font-kalnia text-center max-lg:py-6 py-12 px-3 text-4xl lg:text-[3.8vw] font-bold">
           Let us bring your event to life
         </h1>

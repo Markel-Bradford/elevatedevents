@@ -14,9 +14,9 @@ const Hero: React.FC = () => {
       if (scrollPosition < windowHeight) {
         setCurrentImage("/decor.jpg")
       } else if (scrollPosition < windowHeight * 2.9) {
-        setCurrentImage("/silverimgs/pinkandgold.JPG")
+        setCurrentImage("/silverimgs/pinkandgoldtall.JPG")
       } else {
-        setCurrentImage("/silverimgs/constructionbday.JPG")
+        setCurrentImage("/silverimgs/constructionbdaytall.JPG")
       };
     };
 
@@ -31,14 +31,14 @@ const Hero: React.FC = () => {
 
   return (
     <div className="max-w-[1500px] lg:min-h-[100vh] min-h-[60vh] flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
-      <div className="fixed justify-end w-[100%] lg:w-full">
+      <div className="fixed w-[100%] max-lg:h-full lg:w-full flex items-center justify-center">
         <Image
           width={1920}
           height={1080}
           priority
           src={currentImage}
           alt="Decor by Felicia"
-          className="object-cover flex w-full max-w-[1500px] mx-auto"
+          className="flex w-full max-w-[1500px] mx-auto"
         />
       </div>
       <div className="leading-10 relative w-full text-white font-kalnia animate-fade">
