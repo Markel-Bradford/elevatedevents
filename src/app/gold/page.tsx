@@ -7,14 +7,16 @@ interface GoldImages {
 }
 
 const silverImgs: GoldImages[] = [
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
+  { src: "goldimgs/bearandblocks.jpg" },
+  { src: "goldimgs/twobears.jpg" },
+  { src: "goldimgs/castle.jpg" },
+  { src: "goldimgs/flowerplates.jpg" },
+  { src: "goldimgs/pastelpinkandblue.jpg" },
+  { src: "goldimgs/pinkroses.jpg" },
+  { src: "goldimgs/blackplates.jpg" },
+  { src: "goldimgs/champagnedecor.jpg" },
+  { src: "goldimgs/redandblue.jpg" },
+  { src: "goldimgs/kidsparty.PNG" },
 ];
 
 const Page: React.FC = () => {
@@ -43,7 +45,7 @@ const Page: React.FC = () => {
             width={1920}
             height={1080}
             priority
-            src=""
+            src="/goldimgs/flowerplates.jpg"
             alt="Pink and gold decor by Felicia"
             className="object-cover w-full h-full"
           />
@@ -52,8 +54,8 @@ const Page: React.FC = () => {
           <h1 className="text-[9vw] font-bold lg:text-[7vw] text-center">
             Gold Package
           </h1>
-          <h2 className="text-[7vw] lg:text-[4vw] font-semibold text-center">
-            $1275
+          <h2 className="text-[6vw] lg:text-[4vw] font-semibold text-center">
+            Starting at $1275
           </h2>
         </div>
       </div>
@@ -87,14 +89,14 @@ const Page: React.FC = () => {
           <button
             onClick={toPrevSlide}
             className="absolute text-5xl left-0 top-1/2 font-extrabold -translate-y-1/2 opacity-60 bg-black text-gray-200 p-2 hover:text-amber-400 duration-200
-          max-lg:text-2xl max-xl:text-7xl max-xl:left-8 max-sm:top-[74%] max-xl:top-[64%]"
+          max-lg:text-2xl max-xl:text-7xl max-xl:left-8 max-sm:top-[80%] max-xl:top-[64%]"
           >
             &#10094; {/* Left arrow */}
           </button>
           <button
             onClick={toNextSlide}
             className="absolute text-5xl right-1/2 top-1/2 font-extrabold transform -translate-y-1/2 opacity-60 bg-black text-gray-200 p-2 hover:text-amber-400 duration-200
-          max-lg:text-2xl max-xl:text-7xl max-xl:right-8 max-sm:top-[74%] max-xl:top-[64%]"
+          max-lg:text-2xl max-xl:text-7xl max-xl:right-8 max-sm:top-[80%] max-xl:top-[64%]"
           >
             &#10095; {/* Right arrow */}
           </button>

@@ -8,6 +8,7 @@ interface Product {
   src: string;
   text: string;
   subtext: string;
+  pricing: string;
   description: string;
   path: string;
 }
@@ -15,22 +16,25 @@ interface Product {
 const cardData: Product[] = [
   {
     src: "",
-    text: "Silver - $675",
-    subtext: "Up to 30 guests",
+    text: "Silver",
+    subtext: "Accomodates up to 30 guests",
+    pricing: "Starting at $675",
     description: "Enhance your event with basic tablecloths, simple centerpieces (candles or small floral arrangements), and balloons in your color scheme. Enjoy seasonal floral centerpieces and basic ambient lighting. Setup and teardown are included for a hassle-free experience.",
     path: "/silver"
   },
   {
     src: "",
-    text: "Gold - $1275",
-    subtext: "Up to __ guests",
+    text: "Gold",
+    subtext: "Accomodates up to __ guests",
+    pricing: "Starting at $675",
     description: "Elevate your event with enhanced tablecloths, themed decor, elegant centerpieces (larger floral arrangements or lanterns), and custom floral arrangements. Themed lighting and additional decor like chair covers and backdrops are included. Setup and teardown are handled by our team.",
     path: "/gold"
   },
   {
     src: "",
-    text: "Platinum - $2500",
-    subtext: "Up to __ guests",
+    text: "Platinum",
+    subtext: "Accomodates up to __ guests",
+    pricing: "Starting at $675",
     description: "Transform your event with luxury tablecloths, custom-themed decor, premium centerpieces, and high-end floral arrangements. Enjoy professional lighting design, additional decor like drapery and chandeliers, and extras such as custom signage and specialty items. Setup and teardown are included.",
     path: "/platinum"
   },
@@ -62,6 +66,7 @@ const PackageCards: React.FC = () => {
               src={card.src}
               text={card.text}
               subtext={card.subtext}
+              pricing={card.pricing}
               description={card.description}
               path={card.path}
             />

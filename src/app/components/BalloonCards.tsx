@@ -8,6 +8,7 @@ interface Product {
   src: string;
   text: string;
   subtext: string;
+  pricing: string;
   description: string;
   path: string;
 }
@@ -15,22 +16,25 @@ interface Product {
 const cardData: Product[] = [
   {
     src: "",
-    text: "Silver - $250",
-    subtext: "Up to 30 guests",
+    text: "Silver",
+    subtext: "Accomodates up to 30 guests",
+    pricing: "starting at $250",
     description: "Add a touch of elegance to your event with our Silver Balloon Package. This package includes basic balloon bouquets and clusters in your chosen colors, accompanied by a small, but eye catching, balloon arch that is perfect for entryways or photo backdrops for a fun and delightful experience for you and your guests.",
     path: "/silverballoon"
   },
   {
     src: "",
-    text: "Gold - $500",
-    subtext: "Up to __ guests",
+    text: "Gold",
+    subtext: "Accomodates up to __ guests",
+    pricing: "starting at $500",
     description: "Transform your event with our Gold Balloon Package, featuring enhanced balloon bouquets, clusters, and table centerpieces in various colors and styles. This package includes a medium-sized balloon arch with creative designs and decorative balloon columns for entryways or stage areas that will be sure to amaze.",
     path: "/goldballoon"
   },
   {
     src: "",
-    text: "Platinum - $1000",
-    subtext: "Up to __ guests",
+    text: "Platinum",
+    subtext: "Accomodates up to __ guests",
+    pricing: "starting at $1000",
     description: "Create an extraordinary event with our Platinum Balloon Package, offering luxury balloon bouquets, clusters, and elaborate table centerpieces with custom designs. This package includes a large, intricate balloon arch with stunning patterns and themes, premium balloon columns, and custom balloon sculptures.",
     path: "/platinumballoon"
   },
@@ -62,6 +66,7 @@ const BalloonCards: React.FC = () => {
               src={card.src}
               text={card.text}
               subtext={card.subtext}
+              pricing={card.pricing}
               description={card.description}
               path={card.path}
             />

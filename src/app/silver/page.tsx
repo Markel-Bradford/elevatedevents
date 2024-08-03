@@ -52,8 +52,8 @@ const Page: React.FC = () => {
           <h1 className="text-[9vw] font-bold lg:text-[7vw] text-center">
             Silver Package
           </h1>
-          <h2 className="text-[7vw] lg:text-[4vw] font-semibold text-center">
-            $675
+          <h2 className="text-[6vw] lg:text-[4vw] font-semibold text-center">
+          Starting at $675
           </h2>
         </div>
       </div>

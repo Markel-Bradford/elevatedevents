@@ -10,6 +10,7 @@ interface Product {
   src: string;
   text: string;
   subtext: string;
+  pricing: string;
   description: string;
   path: string
 }
@@ -19,6 +20,7 @@ interface CardItemsProps {
   src: string;
   text: string;
   subtext: string;
+  pricing: string;
   description: string;
   path: string;
 }
@@ -42,7 +44,7 @@ const Carditems: React.FC<CardItemsProps> = (props) => {
           <h5 className="text-black text-2xl font-bold overflow-hidden ">
             {props.text}
           </h5>
-          <h5 className="text-lg font-semibold text-black mt-1">{props.subtext}</h5>
+          <h5 className="text-lg font-semibold text-black mt-1">{props.pricing} <br /> {props.subtext}</h5>
         </div>
         <figure
           className="relative w-full pb-6 text-black text-lg max-lg:text-base overflow-hidden">
