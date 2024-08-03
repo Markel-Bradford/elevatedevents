@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={classNames(
           kalnia.variable,
-          "max-w-[1502px] mx-auto bg-amber-300"
+          "max-w-[1502px] mx-auto bg-amber-300 min-h-[100vh]"
         )}>
         <ScrollToTop />
         <Navbar />
