@@ -23,7 +23,7 @@ const config: Config = {
         star: 'url("/silverimgs/star-16.png")',
       },
       gridTemplateColumns: {
-        navbar: "repeat(3, auto)",
+        navbar: "repeat(4, auto)",
         cards: "repeat(auto-fit,minmax(250px, 1fr))",
       },
       content: {
