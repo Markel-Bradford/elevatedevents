@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "@/ScrollToTop";
 import Footer from "./components/Footer";
+import classNames from "classnames";
 
 const kalnia = Kalnia({ 
   subsets: ["latin"], 
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={kalnia.variable}>
+      <body className={classNames(kalnia.variable, "max-w-[1502px] mx-auto")}>
         <ScrollToTop />
       <Navbar />
       {children}
