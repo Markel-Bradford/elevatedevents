@@ -46,7 +46,7 @@ const Page: React.FC = () => {
             height={1080}
             priority
             src="/goldimgs/flowerplates.jpg"
-            alt="Pink and gold decor by Felicia"
+            alt="Elegant flower party decor by Felicia"
             className="object-cover w-full h-full"
           />
         </div>

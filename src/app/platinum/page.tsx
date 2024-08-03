@@ -44,7 +44,7 @@ const Page: React.FC = () => {
             height={1080}
             priority
             src=""
-            alt="Pink and gold decor by Felicia"
+            alt="decor by Felicia"
             className="object-cover w-full h-full"
           />
         </div>
