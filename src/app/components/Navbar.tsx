@@ -39,7 +39,7 @@ const Navbar = () => {
         <ul
           className={`${
             click ? "left-0 bg-black z-105" : "left-[-110%]"
-          } inline-block w-screen h-screen absolute top-[95px] opacity-100 transition-all duration-500 ease overflow-hidden lg:flex lg:static lg:w-auto lg:h-auto lg:opacity-100 lg:bg-transparent lg:shadow-none lg:ml-auto`}
+          } inline-block w-screen h-screen absolute top-[95px] opacity-100 transition-all duration-500 ease lg:flex lg:static lg:w-auto lg:h-auto lg:opacity-100 lg:bg-transparent lg:shadow-none lg:ml-auto`}
         >
           <li className="h-24">
             <Link
@@ -69,18 +69,19 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          {/* Dropdown menu for packages */}
           <li
             className="relative h-24 text-center text-amber-400 cursor-pointer flex items-center justify-center no-underline px-4 hover:border-b-amber-400 hover:border-b-solid hover:border-b-[4px] transition-all"
             onClick={toggleDropdown}
           >
             Packages
             <ul
-              className={`absolute left-0 w-full top-full mt-2 bg- shadow-lg transition-opacity duration-300 ${
-                isDropdownOpen ? "opacity-100 overflow-y-scroll visible" : "opacity-0 hidden"
+              className={`absolute left-0 lg:-left-8 w-48 max-lg:w-full top-full bg-black shadow-lg transition-opacity duration-300 ${
+                isDropdownOpen ? "opacity-100 max-lg:overflow-y-scroll visible" : "opacity-0 hidden"
               }`}
               style={{ zIndex: 1000 }}
             >
-              <li className="hover:bg-black h-14 hover:text-white">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white">
                 <Link
                   href="/silver"
                   className="block p-2 text-amber-400"
@@ -89,7 +90,7 @@ const Navbar = () => {
                   Silver Event
                 </Link>
               </li>
-              <li className="hover:bg-black h-14 hover:text-white">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white">
                 <Link
                   href="/gold"
                   className="block p-2 text-amber-400"
@@ -98,7 +99,7 @@ const Navbar = () => {
                   Gold Event
                 </Link>
               </li>
-              <li className="hover:bg-black h-14 hover:text-white">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white">
                 <Link
                   href="/platinum"
                   className="block p-2 text-amber-400"
@@ -107,7 +108,7 @@ const Navbar = () => {
                   Platinum Event
                 </Link>
               </li>
-              <li className="hover:bg-black h-14 hover:text-white">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white">
                 <Link
                   href="/silverballoon"
                   className="block p-2 text-amber-400"
@@ -116,7 +117,7 @@ const Navbar = () => {
                   Silver Balloons
                 </Link>
               </li>
-              <li className="hover:bg-black h-14 hover:text-white">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white">
                 <Link
                   href="/goldballoon"
                   className="block p-2 text-amber-400"
@@ -125,7 +126,7 @@ const Navbar = () => {
                   Gold Balloons
                 </Link>
               </li>
-              <li className="hover:bg-black h-14 hover:text-white">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white">
                 <Link
                   href="/platinumballoon"
                   className="block p-2 text-amber-400"
