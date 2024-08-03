@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
         <ul
           className={`${
-            click ? "left-0 bg-black z-105 overflow-y-scroll" : "left-[-110%]"
+            click ? "left-0 bg-black z-105" : "left-[-110%]"
           } inline-block w-screen h-screen absolute top-[95px] opacity-100 transition-all duration-500 ease overflow-hidden lg:flex lg:static lg:w-auto lg:h-auto lg:opacity-100 lg:bg-transparent lg:shadow-none lg:ml-auto`}
         >
           <li className="h-24">
