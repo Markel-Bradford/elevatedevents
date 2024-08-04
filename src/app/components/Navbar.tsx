@@ -24,8 +24,8 @@ const Navbar = () => {
         >
           <Image
             width={100}
-            height={200}
-            className="w-28 h-[88px]"
+            height={100}
+            className="w-[100px] h-[100px]"
             src="/logo.png"
             priority
             alt="Elevated Events Logo"
