@@ -33,7 +33,7 @@ const Page: React.FC = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(toNextSlide, 8000);
+    const interval = setInterval(toNextSlide, 4000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 

@@ -41,14 +41,14 @@ const Hero: React.FC = () => {
           className="flex w-full max-w-[1502px] mx-auto"
         />
       </div>
-      <div className="leading-10 relative w-full text-white font-kalnia animate-fade">
+      {/* <div className="leading-10 relative w-full text-white font-kalnia animate-fade">
         <h1 className="text-[11vw] mb-[5%] font-bold lg:mb-[5%] lg:text-[7vw] text-center">
           Elevated Events
         </h1>
         <p className="text-[7vw] font-semibold lg:text-[4vw] text-center">
           By Felicia
         </p>
-      </div>
+      </div> */}
       
     </div>
   );
