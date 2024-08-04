@@ -27,7 +27,8 @@ const Navbar = () => {
             height={200}
             className="w-28 h-[88px]"
             src="/logo.png"
-            alt=""
+            priority
+            alt="Elevated Events Logo"
           />
         </Link>
         <div
