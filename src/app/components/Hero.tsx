@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
 
       if (scrollPosition < windowHeight) {
         setCurrentImage("/decor.jpg")
-      } else if (scrollPosition < windowHeight * 2.9) {
+      } else if (scrollPosition < windowHeight * 2.7) {
         setCurrentImage("/silverimgs/pinkandgoldtall.jpg")
       } else {
         setCurrentImage("/silverimgs/constructionbdaytall.jpg")
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="max-w-[1500px] lg:min-h-[100vh] min-h-[60vh] flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
+    <div className="max-w-[1500px] lg:min-h-[85vh] min-h-[60vh] flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
       <div className="fixed w-[100%] max-lg:h-full lg:w-full flex items-center justify-center">
         <Image
           width={1920}
