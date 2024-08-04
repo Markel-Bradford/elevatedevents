@@ -82,7 +82,7 @@ const Navbar = () => {
               }`}
               style={{ zIndex: 1000 }}
             >
-              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white ">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
                 <Link
                   href="/silver"
                   className="block p-2 text-amber-400"
@@ -91,7 +91,7 @@ const Navbar = () => {
                   Silver Event
                 </Link>
               </li>
-              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white ">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
                 <Link
                   href="/gold"
                   className="block p-2 text-amber-400"
@@ -100,7 +100,7 @@ const Navbar = () => {
                   Gold Event
                 </Link>
               </li>
-              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white ">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
                 <Link
                   href="/platinum"
                   className="block p-2 text-amber-400"
@@ -109,7 +109,7 @@ const Navbar = () => {
                   Platinum Event
                 </Link>
               </li>
-              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white ">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
                 <Link
                   href="/silverballoon"
                   className="block p-2 text-amber-400"
@@ -118,7 +118,7 @@ const Navbar = () => {
                   Silver Balloons
                 </Link>
               </li>
-              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white ">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
                 <Link
                   href="/goldballoon"
                   className="block p-2 text-amber-400"
@@ -127,7 +127,7 @@ const Navbar = () => {
                   Gold Balloons
                 </Link>
               </li>
-              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-14 hover:text-white ">
+              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
                 <Link
                   href="/platinumballoon"
                   className="block p-2 text-amber-400"
