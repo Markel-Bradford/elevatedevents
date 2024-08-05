@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import Image from "next/image";
 
 const page = () => {
-
   return (
     <div className="bg-black">
       <Hero />
@@ -30,11 +29,21 @@ const page = () => {
           guests. With a passion for innovation and a commitment to excellence,
           Elevated Events is your partner in crafting memorable moments that
           leave a lasting impression. Let us elevate your event to new heights
-          and make it a truly remarkable occasion.
+          {/* and make it a truly remarkable occasion. <br />
+          <br /> As one of the leading event planning companies in the Alabama
+          area, Elevated Events prides itself on delivering top-quality services
+          tailored to the local community. Our extensive knowledge of the
+          region&apos;s most stunning venues and trusted vendors allows us to provide
+          exceptional experiences that showcase the charm and beauty of Alabama.
+          Whether you're hosting a sophisticated soirée in Birmingham, a rustic
+          outdoor wedding in the countryside, or a corporate function in
+          Huntsville, our team&apos;s local expertise ensures that every detail is
+          perfectly executed. Choose Elevated Events for your Alabama event, and
+          experience the perfect blend of elegance, professionalism, and
+          Southern hospitality. */}
         </p>
       </div>
-      <div className="min-h-[90vh] max-lg:min-h-[50vh]">
-      </div>
+      <div className="min-h-[90vh] max-lg:min-h-[50vh]"></div>
       <PackageCards />
       <div className="min-h-[90vh] max-lg:min-h-[50vh]"></div>
       <BalloonCards />
