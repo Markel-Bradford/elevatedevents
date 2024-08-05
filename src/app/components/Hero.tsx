@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         setCurrentImage("/decor.jpg")
       } else if (scrollPosition < windowHeight * 2.9) {
         setCurrentImage("/silverimgs/pinkandgoldtall.jpg")
-      } else if (scrollPosition < windowHeight * 6) {
+      } else if (scrollPosition < windowHeight * 6.1) {
         setCurrentImage("/goldimgs/pastelpinkandblue.jpg")
       };
     };
