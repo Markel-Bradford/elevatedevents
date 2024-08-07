@@ -3,7 +3,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import classNames from "classnames";
-import Image from "next/image";
 import Link from "next/link";
 
 interface Product {
