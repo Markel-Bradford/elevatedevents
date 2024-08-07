@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
           priority
           src={currentImage}
           alt="Decor by Felicia"
-          className="flex w-full max-w-[1502px] mx-auto"
+          className="flex w-full max-w-[1500px] mx-auto"
         />
       </div>
       {/* <div className="leading-10 relative w-full text-white font-kalnia animate-fade">
