@@ -42,9 +42,9 @@ const Hero: React.FC = () => {
           }
         } else if (windowWidth !== null) {
           // Desktop Logic
-          if (scrollPosition < windowHeight) {
+          if (scrollPosition < windowHeight * .9) {
             setCurrentImage("/decor.jpg");
-          } else if (scrollPosition < windowHeight * 2.9) {
+          } else if (scrollPosition < windowHeight * 2.8) {
             setCurrentImage("/silverimgs/pinkandgoldtall.jpg");
           } else {
             setCurrentImage("/goldimgs/pastelpinkandblue.jpg");
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
   }, [windowWidth]);
 
   return (
-    <div className="max-w-[1500px] lg:min-h-[85vh] min-h-[60vh] flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
+    <div className="max-w-[1500px] lg:min-h-[75vh] min-h-[60vh] flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
       <div className="fixed w-[100%] max-lg:h-full lg:w-full flex items-center justify-center">
         <Image
           width={1920}
