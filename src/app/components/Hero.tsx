@@ -5,29 +5,64 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   const [currentImage, setCurrentImage] = useState("/decor.jpg"); // Initial image
+  const [windowWidth, setWindowWidth] = useState<number | null>(null); // Initialize with null
+
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
+    if (typeof window !== "undefined") {
+      // Set initial window width
+      setWindowWidth(window.innerWidth);
 
-      if (scrollPosition < windowHeight) {
-        setCurrentImage("/decor.jpg")
-      } else if (scrollPosition < windowHeight * 2.9) {
-        setCurrentImage("/silverimgs/pinkandgoldtall.jpg")
-      } else if (scrollPosition < windowHeight * 6.1) {
-        setCurrentImage("/goldimgs/pastelpinkandblue.jpg")
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
       };
-    };
 
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll)
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
 
-    // Cleanup on unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    };
-  }, []);
+        // Conditional logic based on screen width
+        if (windowWidth !== null && windowWidth <= 768) {
+          // Mobile Logic
+          if (scrollPosition < windowHeight * 1.5) {
+            setCurrentImage("/decor.jpg");
+          } else if (scrollPosition < windowHeight * 3.5) {
+            setCurrentImage("/silverimgs/pinkandgoldtall.jpg");
+          } else {
+            setCurrentImage("/goldimgs/pastelpinkandblue.jpg");
+          }
+        } else if (windowWidth !== null && windowWidth <= 1024) {
+          // Tablet Logic
+          if (scrollPosition < windowHeight * .6) {
+            setCurrentImage("/decor.jpg");
+          } else if (scrollPosition < windowHeight * 2.2) {
+            setCurrentImage("/silverimgs/pinkandgoldtall.jpg");
+          } else {
+            setCurrentImage("/goldimgs/pastelpinkandblue.jpg");
+          }
+        } else if (windowWidth !== null) {
+          // Desktop Logic
+          if (scrollPosition < windowHeight) {
+            setCurrentImage("/decor.jpg");
+          } else if (scrollPosition < windowHeight * 2.9) {
+            setCurrentImage("/silverimgs/pinkandgoldtall.jpg");
+          } else {
+            setCurrentImage("/goldimgs/pastelpinkandblue.jpg");
+          }
+        }
+      };
+
+      // Add scroll and resize event listeners
+      window.addEventListener("scroll", handleScroll);
+      window.addEventListener("resize", handleResize);
+
+      // Cleanup on unmount
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, [windowWidth]);
 
   return (
     <div className="max-w-[1500px] lg:min-h-[85vh] min-h-[60vh] flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">

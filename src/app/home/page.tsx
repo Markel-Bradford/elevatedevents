@@ -12,7 +12,7 @@ const page = () => {
         <h1 className="font-kalnia text-center max-lg:py-6 py-12 px-3 text-4xl lg:text-[3.8vw] font-bold">
           Let us bring your event to life
         </h1>
-        <p className=" leading-10 max-md:pt-0 pt-6 text-3xl max-lg:text-2xl max-md:text-xl max-md:leading-8 max-lg:px-6 px-32">
+        <p className=" leading-10 max-md:pt-0 pt-6 text-3xl max-lg:text-2xl max-md:text-xl max-md:leading-8 max-md:px-6 max-lg:px-3 min-w-[1025px]:px-32">
           Welcome to Elevated Events, where we transform your most elegant event
           dreams into unforgettable realities. Our mission is to create
           extraordinary experiences tailored to your unique vision and style,
@@ -29,7 +29,7 @@ const page = () => {
           guests. With a passion for innovation and a commitment to excellence,
           Elevated Events is your partner in crafting memorable moments that
           leave a lasting impression. Let us elevate your event to new heights
-          {/* and make it a truly remarkable occasion. <br />
+          and make it a truly remarkable occasion. <br />
           <br /> As one of the leading event planning companies in the Alabama
           area, Elevated Events prides itself on delivering top-quality services
           tailored to the local community. Our extensive knowledge of the
@@ -40,7 +40,7 @@ const page = () => {
           Huntsville, our team&apos;s local expertise ensures that every detail is
           perfectly executed. Choose Elevated Events for your Alabama event, and
           experience the perfect blend of elegance, professionalism, and
-          Southern hospitality. */}
+          Southern hospitality.
         </p>
       </div>
       <div className="min-h-[90vh] max-lg:min-h-[50vh]"></div>
