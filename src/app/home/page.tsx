@@ -35,7 +35,7 @@ const page = () => {
           tailored to the local community. Our extensive knowledge of the
           region&apos;s most stunning venues and trusted vendors allows us to provide
           exceptional experiences that showcase the charm and beauty of Alabama.
-          Whether you're hosting a sophisticated soirée in Birmingham, a rustic
+          Whether you&apos;re hosting a sophisticated soirée in Birmingham, a rustic
           outdoor wedding in the countryside, or a corporate function in
           Huntsville, our team&apos;s local expertise ensures that every detail is
           perfectly executed. Choose Elevated Events for your Alabama event, and
