@@ -3,8 +3,8 @@ import Mailgun from 'mailgun.js';
 import FormData from 'form-data';
 import Mailgen from 'mailgen';
 
-const API_KEY = process.env.MAILGUN_KEY!;
-const DOMAIN = process.env.MAILGUN_DOMAIN!;
+const API_KEY = process.env.MAILGUN_KEY;
+const DOMAIN = process.env.MAILGUN_DOMAIN;
 
 const mailgen = new Mailgen({
     theme: 'default',
