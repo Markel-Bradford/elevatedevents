@@ -4,11 +4,11 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const EmailBtn: React.FC = () => {
-  const pathname = usePathname();
+//   const pathname = usePathname();
 
   const handleSubmit = async () => {
     try {
-      const r = await fetch("/api/send-email", {
+      const r = await fetch("/api/sendemail", {
         method: "POST",
         body: JSON.stringify({
           name: "Markel",
