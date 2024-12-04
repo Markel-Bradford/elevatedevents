@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const Hero: React.FC = () => {
-  const [currentImage, setCurrentImage] = useState("/decor.jpg"); // Initial image
+  const [currentImage, setCurrentImage] = useState("/platimgs/orangetable.jpg"); // Initial image
   const [windowWidth, setWindowWidth] = useState<number | null>(null); // Initialize with null
 
 
@@ -25,29 +25,29 @@ const Hero: React.FC = () => {
         if (windowWidth !== null && windowWidth <= 768) {
           // Mobile Logic
           if (scrollPosition < windowHeight * 1.5) {
-            setCurrentImage("/decor.jpg");
+            setCurrentImage("/platimgs/orangetable.jpg");
           } else if (scrollPosition < windowHeight * 3.5) {
-            setCurrentImage("/silverimgs/pinkandgoldtall.jpg");
+            setCurrentImage("/platimgs/blackplates.jpg");
           } else {
-            setCurrentImage("/goldimgs/pastelpinkandblue.jpg");
+            setCurrentImage("/silverimgs/greenballooncenter.jpg");
           }
         } else if (windowWidth !== null && windowWidth <= 1024) {
           // Tablet Logic
           if (scrollPosition < windowHeight * .6) {
-            setCurrentImage("/decor.jpg");
+            setCurrentImage("/platimgs/orangetable.jpg");
           } else if (scrollPosition < windowHeight * 2.2) {
-            setCurrentImage("/silverimgs/pinkandgoldtall.jpg");
+            setCurrentImage("/platimgs/blackplates.jpg");
           } else {
-            setCurrentImage("/goldimgs/pastelpinkandblue.jpg");
+            setCurrentImage("/silverimgs/greenballooncenter.jpg");
           }
         } else if (windowWidth !== null) {
           // Desktop Logic
           if (scrollPosition < windowHeight * .9) {
-            setCurrentImage("/decor.jpg");
+            setCurrentImage("/platimgs/orangetable.jpg");
           } else if (scrollPosition < windowHeight * 2.8) {
-            setCurrentImage("/silverimgs/pinkandgoldtall.jpg");
+            setCurrentImage("/platimgs/blackplates.jpg");
           } else {
-            setCurrentImage("/goldimgs/pastelpinkandblue.jpg");
+            setCurrentImage("/silverimgs/greenballooncenter.jpg");
           }
         }
       };
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
   }, [windowWidth]);
 
   return (
-    <div className="max-w-[1500px] lg:min-h-[75vh] min-h-[60vh] flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
+    <div className="max-w-[1500px] lg:min-h-[75vh]  flex justify-center items-center mx-auto max-lg:px-0 max-lg:flex-col">
       <div className="fixed w-[100%] max-lg:h-full lg:w-full flex items-center justify-center">
         <Image
           width={1920}

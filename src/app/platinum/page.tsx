@@ -7,14 +7,24 @@ interface PlatinumImages {
 }
 
 const silverImgs: PlatinumImages[] = [
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
-  { src: "" },
+  { src: "platimgs/pinkredrose.jpg" },
+  { src: "platimgs/rosecenter.jpg" },
+  { src: "platimgs/redrose.jpg" },
+  { src: "platimgs/candlesandbouquet.jpg" },
+  { src: "platimgs/champagnerose.jpg" },
+  { src: "platimgs/ambientdecor.jpg" },
+  { src: "platimgs/orangetable.jpg" },
+  { src: "platimgs/violetrose.jpg" },
+  { src: "platimgs/whitecenterpiece.jpg" },
+  { src: "platimgs/whiterose.jpg" },
+  { src: "platimgs/blackplates.jpg" },
+  { src: "platimgs/whitecenter.jpg" },
+  { src: "platimgs/candlecenterpiece.jpg" },
+  { src: "platimgs/pinkandwhite.jpg" },
+  { src: "platimgs/platesandcenter.jpg" },
+  { src: "platimgs/violetandpink.jpg" },
+  { src: "platimgs/whiterosecenter.jpg" },
+  { src: "platimgs/roseandcandle.jpg" },
 ];
 
 const Page: React.FC = () => {
@@ -38,12 +48,12 @@ const Page: React.FC = () => {
   return (
     <div>
       <div className="max-w-full xl:min-h-[100vh] md:min-h-[60vh] max-md:min-h-[45vh]  flex justify-center items-center bg-black mx-auto max-lg:px-0 max-lg:flex-col">
-        <div className="fixed max-w-[1502px] justify-end w-[100%] lg:w-full">
+        <div className="fixed max-w-[1499px] justify-end w-[100%] lg:w-full">
           <Image
             width={1920}
             height={1080}
             priority
-            src=""
+            src="/platimgs/ambientdecor.jpg"
             alt="decor by Felicia"
             className="object-cover w-full h-full"
           />
@@ -63,7 +73,7 @@ const Page: React.FC = () => {
         </h3>
       </div>
       <div
-        className="py-24 px-6 h-full bg-black flex items-center justify-center relative 
+        className="max-w-[1500px] mx-auto py-24 px-6 h-full bg-black flex items-center justify-center relative 
       max-xl:flex-col-reverse max-lg:pt-0 max-lg:pb-12"
       >
         <div
@@ -87,14 +97,14 @@ const Page: React.FC = () => {
           <button
             onClick={toPrevSlide}
             className="absolute text-5xl left-0 top-1/2 font-extrabold -translate-y-1/2 opacity-60 bg-black text-gray-200 p-2 hover:text-amber-400 duration-200
-          max-lg:text-2xl max-xl:text-7xl max-xl:left-8 max-sm:top-[74%] max-xl:top-[64%]"
+          max-lg:text-2xl max-xl:text-7xl max-xl:left-8 max-sm:top-[80%] max-xl:top-[64%]"
           >
             &#10094; {/* Left arrow */}
           </button>
           <button
             onClick={toNextSlide}
             className="absolute text-5xl right-1/2 top-1/2 font-extrabold transform -translate-y-1/2 opacity-60 bg-black text-gray-200 p-2 hover:text-amber-400 duration-200
-          max-lg:text-2xl max-xl:text-7xl max-xl:right-8 max-sm:top-[74%] max-xl:top-[64%]"
+          max-lg:text-2xl max-xl:text-7xl max-xl:right-8 max-sm:top-[80%] max-xl:top-[64%]"
           >
             &#10095; {/* Right arrow */}
           </button>

@@ -16,7 +16,7 @@ const Navbar = () => {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
-    <nav className="bg-black h-24 flex justify-center items-center text-xl sticky top-0 z-[1000] shadow-[0_4px_8px_rgba(255,255,255,0.2)]">
+    <nav className="bg-black h-24 flex justify-center items-center text-xl sticky top-0 z-[1000]">
       <div className="flex justify-center items-center h-20 max-w-[1500px] w-4/5 max-lg:justify-between font-kalnia">
         <Link
           href="/home"

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Kalnia } from "next/font/google";
+import { Kalnia, Cedarville_Cursive } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "@/ScrollToTop";
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={classNames(
           kalnia.variable,
-          "max-w-[1502px] mx-auto bg-amber-300 min-h-[100vh]"
+          "max-w-full mx-auto min-h-[100vh]"
         )}>
         <ScrollToTop />
         <Navbar />

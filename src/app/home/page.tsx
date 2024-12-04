@@ -7,12 +7,12 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className="bg-black">
-      <Hero />
-      <div className="flex flex-col items-center justify-center relative lg:px-8 bg-black pb-6 min-h-[100vh]">
-        <h1 className="font-kalnia text-center max-lg:py-6 py-12 px-3 text-4xl lg:text-[3.8vw] font-bold animate-fadein">
-          Let us bring your event to life
+      
+      <div className="flex flex-col items-center justify-center relative lg:px-8 bg-black z-50">
+        <h1 className="text-center max-lg:py-3 py-12 px-3 text-2xl lg:text-[3.8vw] animate-fadein font-kalnia">
+          Let Us Bring Your Event To Life
         </h1>
-        <p className=" leading-10 max-md:pt-0 pt-6 text-3xl max-lg:text-2xl max-md:text-xl max-md:leading-8 max-md:px-6 max-lg:px-3 min-w-[1025px]:px-32">
+        {/* <p className=" leading-10 max-md:pt-0 pt-6 text-3xl max-lg:text-2xl max-md:text-xl max-md:leading-8 max-md:px-6 max-lg:px-3 min-w-[1025px]:px-32">
           Welcome to Elevated Events, where we transform your most elegant event
           dreams into unforgettable realities. Our mission is to create
           extraordinary experiences tailored to your unique vision and style,
@@ -41,8 +41,9 @@ const page = () => {
           perfectly executed. Choose Elevated Events for your Alabama event, and
           experience the perfect blend of elegance, professionalism, and
           Southern hospitality.
-        </p>
+        </p> */}
       </div>
+      <Hero />
       <div className="min-h-[90vh] max-lg:min-h-[50vh]"></div>
       <PackageCards />
       <div className="min-h-[90vh] max-lg:min-h-[50vh]"></div>

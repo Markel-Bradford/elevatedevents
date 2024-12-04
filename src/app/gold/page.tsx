@@ -40,12 +40,12 @@ const Page: React.FC = () => {
   return (
     <div>
       <div className="max-w-full xl:min-h-[100vh] md:min-h-[60vh] max-md:min-h-[45vh]  flex justify-center items-center bg-black mx-auto max-lg:px-0 max-lg:flex-col">
-        <div className="fixed max-w-[1502px] justify-end w-[100%] lg:w-full">
+        <div className="fixed max-w-[1499px] justify-end w-[100%] lg:w-full">
           <Image
             width={1920}
             height={1080}
             priority
-            src="/goldimgs/flowerplates.jpg"
+            src="/goldimgs/pastelpinkandblue.jpg"
             alt="Elegant flower party decor by Felicia"
             className="object-cover w-full h-full"
           />
@@ -65,7 +65,7 @@ const Page: React.FC = () => {
         </h3>
       </div>
       <div
-        className="py-24 px-6 h-full bg-black flex items-center justify-center relative 
+        className="max-w-[1500px] mx-auto py-24 px-6 h-full bg-black flex items-center justify-center relative 
       max-xl:flex-col-reverse max-lg:pt-0 max-lg:pb-12"
       >
         <div

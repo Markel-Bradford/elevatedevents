@@ -40,4 +40,9 @@ body {
   background: #fff;
   max-width: 1800px;
 }
+
+h1 {
+  font-family: cursive;
+}
+
 }

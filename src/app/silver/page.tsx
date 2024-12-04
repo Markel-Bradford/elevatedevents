@@ -38,8 +38,8 @@ const Page: React.FC = () => {
 
   return (
     <div>
-      <div className="max-w-full xl:min-h-[100vh] md:min-h-[60vh] max-md:min-h-[45vh]  flex justify-center items-center bg-white mx-auto max-lg:px-0 max-lg:flex-col">
-        <div className="fixed max-w-[1502px] justify-end w-[100%] lg:w-full">
+      <div className="max-w-full xl:min-h-[100vh] md:min-h-[60vh] max-md:min-h-[45vh]  flex justify-center items-center  mx-auto max-lg:px-0 max-lg:flex-col">
+        <div className="fixed max-w-[1499px] justify-end w-[100%] lg:w-full">
           <Image
             width={1920}
             height={1080}
@@ -63,7 +63,7 @@ const Page: React.FC = () => {
             What&apos;s included
           </h3>
         </div>
-      <div className="py-24 px-6 h-full bg-black flex items-center justify-center relative 
+      <div className="max-w-[1500px] mx-auto py-24 px-6 h-full bg-black flex items-center justify-center relative 
       max-xl:flex-col-reverse max-lg:pt-0 max-lg:pb-12">
         <div
           className="flex w-1/2 h-[600px] flex-nowrap overflow-hidden translate-x-slides

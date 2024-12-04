@@ -18,10 +18,10 @@ const EmailBtn: React.FC = () => {
           intro: "Thanks for contacting Elevated Events",
           content:
             "Hello, I would like to know more about your silver event package. I look forward to hearing from you soon!",
-        }
-        break
+        };
+        break;
 
-        case "/gold":
+      case "/gold":
         emailDetails = {
           name: "Markel",
           to: "markel.bradford94@gmail.com",
@@ -29,10 +29,10 @@ const EmailBtn: React.FC = () => {
           intro: "Thanks for contacting Elevated Events",
           content:
             "Hello, I would like to know more about your gold event package. I look forward to hearing from you soon!",
-        }
-        break
+        };
+        break;
 
-        case "/platinum":
+      case "/platinum":
         emailDetails = {
           name: "Markel",
           to: "markel.bradford94@gmail.com",
@@ -40,13 +40,12 @@ const EmailBtn: React.FC = () => {
           intro: "Thanks for contacting Elevated Events",
           content:
             "Hello, I would like to know more about your platinum event package. I look forward to hearing from you soon!",
-        }
-        break
+        };
+        break;
     }
-    
+
     try {
       const r = await fetch("/api/sendemail", {
-        
         method: "POST",
         body: JSON.stringify(emailDetails),
         headers: {
