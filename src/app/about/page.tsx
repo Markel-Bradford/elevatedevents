@@ -41,7 +41,7 @@ const About: React.FC = () => {
         height={1080}
         priority
         alt="About Felicia Cook"
-        className="flex w-full max-w-[400px] py-12 animate-fadein"
+        className="flex w-full max-w-[400px] py-12 animate-fadein rounded-t-full"
       />
       <div className="flex py-16 max-lg:pt-4 max-lg:pb-16">
       <p  className={"text-xl leading-8 px-16 max-lg:px-4"}>

@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
           priority
           src="/platimgs/blackplates.jpg"
           alt="Decor by Felicia"
-          className="flex w-1/3 mx-auto border-8"
+          className="flex w-1/3 mx-auto border-8 max-lg:border-4 animate-fadein max-lg:hidden"
         />
         <Image
           width={1920}
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
           priority
           src="/platimgs/orangetable.JPG"
           alt="Decor by Felicia"
-          className="flex w-1/3 mx-auto border-8"
+          className="flex w-1/3 mx-auto border-8 max-lg:border-0 animate-fade max-lg:w-full"
         />
         <Image
           width={1920}
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
           priority
           src="/silverimgs/greenballooncenter.JPG"
           alt="Decor by Felicia"
-          className="flex w-1/3 mx-auto border-8"
+          className="flex w-1/3 mx-auto border-8 max-lg:border-4 animate-slideandfade max-lg:hidden"
         />
       </div>
       {/* <div className="leading-10 relative w-full text-white font-kalnia animate-fade">

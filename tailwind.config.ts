@@ -13,11 +13,12 @@ const config: Config = {
       },
       animation: {
         fadein: "fadein 0.7s linear",
-        slideandfade: "slideandfade 0.8s linear",
+        slideandfade: "slideandfade 0.7s linear",
         slideup: "slideup 0.3s linear",
-        fade: "fade 0.8s linear",
+        fade: "fade 0.7s linear",
         fadeout: "fadeout 0.8s forwards",
         pulse: "pulse 2s 2s linear infinite"
+
       },
       listStyleImage: {
         star: 'url("/silverimgs/star-16.png")',
@@ -38,7 +39,7 @@ const config: Config = {
           "100%": { opacity: "1", transform: "scale(1)" },
         },
         slideandfade: {
-          "0%": { transform: "translateX(60%)", opacity: "0" },
+          "0%": { transform: "translateX(20%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
         slideup: {
