@@ -25,17 +25,17 @@ const About: React.FC = () => {
   return (
     <div className="flex max-lg:flex-col flex-col bg-black mx-auto justify-around items-center min-h-[100vh] max-w-[1500px]">
       <div>
-        {/* <Image 
-          src="/platimgs/candlecenterpiece.jpg"
+        <h1 className="font-kalnia text-6xl mt-4 text-center">Meet Felicia</h1>
+        <Image 
+          src="/whiteaccent.png"
           width={1920}
         height={1080}
         priority
         alt=""
-        className="object-cover w-full h-full"
-        /> */}
-        <h1 className="font-kalnia text-6xl mt-4 text-center">Meet Felicia</h1>
+        className="max-lg:w-1/2 max-sm:w-full w-2/5 mx-auto"
+        />
       </div>
-      <div className="flex max-lg:flex-col">
+      <div className="flex max-lg:flex-col max-lg:items-center">
         <Image
           src="/aboutfee.JPG"
           width={1920}
