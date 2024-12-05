@@ -36,7 +36,7 @@ const About: React.FC = () => {
         </div>
       <div className="flex max-lg:flex-col">
       <Image
-        src="/aboutfee.jpg"
+        src="/aboutfee.JPG"
         width={1920}
         height={1080}
         priority

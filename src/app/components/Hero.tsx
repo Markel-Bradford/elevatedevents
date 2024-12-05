@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
           width={1920}
           height={1080}
           priority
-          src="/platimgs/orangetable.jpg"
+          src="/platimgs/orangetable.JPG"
           alt="Decor by Felicia"
           className="flex w-1/3 mx-auto border-8"
         />
@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
           width={1920}
           height={1080}
           priority
-          src="/silverimgs/greenballooncenter.jpg"
+          src="/silverimgs/greenballooncenter.JPG"
           alt="Decor by Felicia"
           className="flex w-1/3 mx-auto border-8"
         />

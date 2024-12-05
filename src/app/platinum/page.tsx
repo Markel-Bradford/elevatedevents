@@ -11,9 +11,9 @@ const silverImgs: PlatinumImages[] = [
   { src: "platimgs/rosecenter.jpg" },
   { src: "platimgs/redrose.jpg" },
   { src: "platimgs/candlesandbouquet.jpg" },
-  { src: "platimgs/champagnerose.jpg" },
+  { src: "platimgs/champagnerose.JPG" },
   { src: "platimgs/ambientdecor.jpg" },
-  { src: "platimgs/orangetable.jpg" },
+  { src: "platimgs/orangetable.JPG" },
   { src: "platimgs/violetrose.jpg" },
   { src: "platimgs/whitecenterpiece.jpg" },
   { src: "platimgs/whiterose.jpg" },
@@ -89,7 +89,7 @@ const Page: React.FC = () => {
                 key={index}
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 src={`/${item.src}`}
-                alt={`Silver event image ${index + 1}`}
+                alt={`Platinum event image ${index + 1}`}
                 priority
               />
             );
