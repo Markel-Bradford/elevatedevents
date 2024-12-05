@@ -23,7 +23,7 @@ const page = () => {
       <div className="max-w-[1200px] mx-auto my-16">
         <p className=" max-md:pt-0 pt-6 text-xl max-lg:text-xl max-md:text-lg max-md:leading-8 max-md:px-6 max-lg:px-3 min-w-[1025px]:px-32">
           Welcome to Elevated Events, where we bring your dream events to life.
-          Whether it's an intimate gathering, lavish wedding, or corporate gala,
+          Whether it&apos;s an intimate gathering, lavish wedding, or corporate gala,
           we create extraordinary experiences tailored to your vision and style.
           Our dedicated team handles every detail—from venue selection and
           design to catering and entertainment—ensuring a seamless, stress-free
