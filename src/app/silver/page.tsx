@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import EmailBtn from "../components/EmailBtn";
+// import EmailBtn from "../components/EmailBtn";
 
 interface SilverImages {
   src: string;
@@ -120,9 +120,9 @@ const Page: React.FC = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-black relative flex items-center justify-center pb-12">
+      {/* <div className="bg-black relative flex items-center justify-center pb-12">
        <EmailBtn />
-      </div>
+      </div> */}
     </div>
   );
 };
