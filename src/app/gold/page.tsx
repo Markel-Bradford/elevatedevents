@@ -55,7 +55,7 @@ const Page: React.FC = () => {
             Gold Package
           </h1>
           <h2 className="text-[6vw] lg:text-[4vw] font-semibold text-center">
-            Starting at $1275
+          Contact us for pricing
           </h2>
         </div>
       </div>

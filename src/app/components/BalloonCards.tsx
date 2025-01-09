@@ -14,14 +14,7 @@ interface Product {
 }
 
 const cardData: Product[] = [
-  {
-    src: "",
-    text: "Silver",
-    subtext: "Accomodates up to 30 guests",
-    pricing: "starting at $250",
-    description: "Add a touch of elegance to your event with our Silver Balloon Package. This package includes basic balloon bouquets and clusters in your chosen colors, accompanied by a small, but eye catching, balloon arch that is perfect for entryways or photo backdrops for a fun and delightful experience for you and your guests.",
-    path: "/silverballoon"
-  },
+  
   {
     src: "",
     text: "Gold",

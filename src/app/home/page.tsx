@@ -37,7 +37,6 @@ const page = () => {
         </p>
       </div>
       <PackageCards />
-      <BalloonCards />
     </div>
   );
 };

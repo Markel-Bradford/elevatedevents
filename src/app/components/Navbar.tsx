@@ -16,7 +16,7 @@ const Navbar = () => {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
-    <nav className="bg-black h-24 flex justify-center items-center text-xl sticky top-0 z-[1000]">
+    <nav className="bg-black h-24 flex justify-center items-center text-xl sticky top-0 z-[1000] shadow-">
       <div className="flex justify-center items-center h-20 max-w-[1500px] w-4/5 max-lg:justify-between font-kalnia">
         <Link
           href="/home"
@@ -102,34 +102,16 @@ const Navbar = () => {
               </li>
               <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
                 <Link
-                  href="/silverballoon"
+                  href="/balloonpackage"
                   className="block p-2 text-amber-400"
                   onClick={closeMobileMenu}
                 >
-                  Silver Balloons
-                </Link>
-              </li>
-              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
-                <Link
-                  href="/goldballoon"
-                  className="block p-2 text-amber-400"
-                  onClick={closeMobileMenu}
-                >
-                  Gold Balloons
-                </Link>
-              </li>
-              <li className="bg-zinc-950 text-lg hover:border-b-solid hover:border-b-2 hover:border-b-amber-400 h-16 flex items-center justify-center hover:text-white ">
-                <Link
-                  href="/platinumballoon"
-                  className="block p-2 text-amber-400"
-                  onClick={closeMobileMenu}
-                >
-                  Platinum Balloons
+                  Balloon Package
                 </Link>
               </li>
             </ul>
           </li>
-          <li className="h-24 max-lg:h-16">
+          {/* <li className="h-24 max-lg:h-16">
             <Link
               href="/contact"
               className="max-lg:flex justify-center max-lg:w-full max-lg:text-center max-lg:p-8 max-lg:hover:bg-black max-lg:hover:text-white text-amber-400 flex items-center no-underline px-4 h-full hover:border-b-amber-400 hover:border-b-solid hover:border-b-[4px] transition-all"
@@ -137,8 +119,7 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </li>
-
+          </li> */}
         </ul>
       </div>
     </nav>

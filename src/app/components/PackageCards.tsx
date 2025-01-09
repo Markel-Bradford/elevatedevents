@@ -18,25 +18,33 @@ const cardData: Product[] = [
     src: "",
     text: "Silver",
     subtext: "Accomodates up to 30 guests",
-    pricing: "Starting at $675",
+    pricing: "Contact us for pricing",
     description: "Enhance your event with basic tablecloths, simple centerpieces (candles or small floral arrangements), and balloons in your color scheme. Enjoy seasonal floral centerpieces and basic ambient lighting. Setup and teardown are included for a hassle-free experience.",
     path: "/silver"
   },
   {
     src: "",
     text: "Gold",
-    subtext: "Accomodates up to __ guests",
-    pricing: "Starting at $675",
-    description: "Elevate your event with enhanced tablecloths, themed decor, elegant centerpieces (larger floral arrangements or lanterns), and custom floral arrangements. Themed lighting and additional decor like chair covers and backdrops are included. Setup and teardown are handled by our team.",
+    subtext: "Accomodates up to 65 guests",
+    pricing: "Contact us for pricing",
+    description: "Elevate your event with enhanced tablecloths, themed decor and elegant centerpieces (large custom floral arrangements or lanterns). Themed lighting and additional decor like chair covers and backdrops are included. Setup and teardown are included for a hassle-free experience.",
     path: "/gold"
   },
   {
     src: "",
     text: "Platinum",
-    subtext: "Accomodates up to __ guests",
-    pricing: "Starting at $675",
-    description: "Transform your event with luxury tablecloths, custom-themed decor, premium centerpieces, and high-end floral arrangements. Enjoy professional lighting design, additional decor like drapery and chandeliers, and extras such as custom signage and specialty items. Setup and teardown are included.",
+    subtext: "Accomodates up to 150 guests",
+    pricing: "Contact us for pricing",
+    description: "Transform your event with luxury tablecloths, custom-themed decor, premium centerpieces, and high-end floral arrangements. Enjoy professional lighting designs plus additional decor, such as custom signage and specialty items. Setup and teardown are included for a hassle-free experience.",
     path: "/platinum"
+  },
+  {
+    src: "",
+    text: "Ballon Package",
+    subtext: "Accomodations based on need",
+    pricing: "Contact us for pricing",
+    description: "Add a touch of elegance to your event with our Balloon Package. We offer a variety of balloon bouquets and clusters in colors of your choice, as well as eye catching balloon arches that are perfect for entryways or backdrops. Setup and teardown are included for a hassle-free experience.",
+    path: "/balloonpackage"
   },
 ];
 
@@ -55,7 +63,7 @@ const PackageCards: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center5 mx-auto my-0 pt-8 px-8 max-lg:px-8 bg-black">
+    <div className="relative flex flex-col items-center justify-center5 mx-auto mt-0 mb-12 pt-8 px-8 max-lg:px-8 bg-black">
       <h1 className="font-kalnia text-white text-center text-4xl lg:text-6xl mb-12">Event Packages</h1>
       <div className="w-4/5 max-lg:w-full mx-auto my-0">
         <div className="relative mt-6 max-lg:mt-0 mb-11 grid grid-cols-cards gap-12">
