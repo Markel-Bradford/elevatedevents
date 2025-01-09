@@ -92,13 +92,13 @@ const Page: React.FC = () => {
           <button
             onClick={toPrevSlide}
             className="absolute text-5xl left-0 top-1/2 font-extrabold -translate-y-1/2 opacity-60 bg-black text-gray-200 p-2 hover:text-amber-400 duration-200
-                max-lg:text-2xl max-xl:text-7xl max-xl:left-8 max-sm:top-[74%] max-xl:top-[64%]">
+                max-lg:text-2xl max-xl:text-7xl max-xl:left-8 max-sm:top-[70%] max-xl:top-[64%]">
             &#10094; {/* Left arrow */}
           </button>
           <button
             onClick={toNextSlide}
             className="absolute text-5xl right-1/2 top-1/2 font-extrabold transform -translate-y-1/2 opacity-60 bg-black text-gray-200 p-2 hover:text-amber-400 duration-200
-                max-lg:text-2xl max-xl:text-7xl max-xl:right-8 max-sm:top-[74%] max-xl:top-[64%]">
+                max-lg:text-2xl max-xl:text-7xl max-xl:right-8 max-sm:top-[70%] max-xl:top-[64%]">
             &#10095; {/* Right arrow */}
           </button>
         </div>
