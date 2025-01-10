@@ -38,6 +38,5 @@ next-env.d.ts
 
 # files
 EmailBtn.tsx
-route.ts
-/api/sendemail
+
 
