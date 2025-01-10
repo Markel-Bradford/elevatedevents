@@ -8,11 +8,20 @@ const Contact = () => {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
+    const body = JSON.stringify({
+      from: formData.get('from'),
+      to: formData.get('to'),
+      subject: formData.get('subject'),
+      text: formData.get('text')
+    })
 
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body
       });
 
       if (response.ok) {
@@ -40,6 +49,7 @@ const Contact = () => {
           </label>
           <input
             type="email"
+            id="from"
             name="from"
             className="text-black px-2"
             placeholder="youremail@domain.com"
@@ -50,6 +60,7 @@ const Contact = () => {
           </label>
           <input
             type="email"
+            id="to"
             name="to"
             className="text-black px-2"
             defaultValue={"markel.bradford94@gmail.com"}
@@ -60,17 +71,18 @@ const Contact = () => {
           </label>
           <input
             type="text"
+            id="subject"
             name="subject"
             className="text-black px-2"
             defaultValue={"Request for more information"}
             required
           />
-          <label htmlFor="body" className="text-white">
+          <label htmlFor="text" className="text-white">
             Body
           </label>
           <textarea
             name="text"
-            id="emailtext"
+            id="text"
             className="h-36 text-black p-2 whitespace-pre text-wrap"
             defaultValue={
               "Hello, Felicia, \n\nMy name is ____ and I am interested in your services. I would like to connect with you to learn more about your packages and pricing. "
