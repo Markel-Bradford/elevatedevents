@@ -111,7 +111,7 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-          {/* <li className="h-24 max-lg:h-16">
+          <li className="h-24 max-lg:h-16">
             <Link
               href="/contact"
               className="max-lg:flex justify-center max-lg:w-full max-lg:text-center max-lg:p-8 max-lg:hover:bg-black max-lg:hover:text-white text-amber-400 flex items-center no-underline px-4 h-full hover:border-b-amber-400 hover:border-b-solid hover:border-b-[4px] transition-all"
@@ -119,7 +119,7 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
     </nav>

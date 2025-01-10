@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="flex flex-col items-center justify-center ">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col w-full min-w-[360px] max-w-[500px] px-5 gap-2 mt-12"
+          className="flex flex-col w-full min-w-[360px] max-w-[500px] px-5 gap-2 mt-24"
         >
           <label htmlFor="subject" className="text-white">
             Subject
