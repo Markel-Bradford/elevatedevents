@@ -52,7 +52,7 @@ const Contact = () => {
             type="email"
             name="to"
             className="text-black px-2"
-            value={"markel.bradford94@gmail.com"}
+            defaultValue={"markel.bradford94@gmail.com"}
             readOnly
           />
           <label htmlFor="subject" className="text-white">
@@ -62,7 +62,7 @@ const Contact = () => {
             type="text"
             name="subject"
             className="text-black px-2"
-            value={"Request for more information"}
+            defaultValue={"Request for more information"}
             required
           />
           <label htmlFor="body" className="text-white">
