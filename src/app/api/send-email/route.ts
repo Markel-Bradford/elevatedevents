@@ -1,51 +1,55 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-import formidable from 'formidable';
 import formData from 'form-data';
 import Mailgun from 'mailgun.js';
+import { NextRequest, NextResponse } from 'next/server';
+
+const mailgunKey = process.env.MAILGUN_KEY;
+const mailgunDomain = process.env.MAILGUN_DOMAIN;
+const toEmail = process.env.TO_EMAIL;
 
 const mailgun = new Mailgun(formData);
-const mg = mailgun.client({ username: 'api', key: process.env.MAILGUN_KEY });
+const mg = mailgun.client({
+  username: 'api',
+  key: mailgunKey || '',
+  url: 'https://api.mailgun.net',
+});
 
-// Use the new method for API route configuration
-export const dynamic = 'force-dynamic'; // Forces dynamic behavior (bodyParser = false)
+export async function POST(request: NextRequest) {
+  try {
+    // Check content type and parse body accordingly
+    const contentType = request.headers.get('Content-Type');
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'POST') {
-    const form = formidable({ multiples: true });
+    let body;
+    if (contentType?.includes('application/json')) {
+      // Parse JSON body
+      body = await request.json();
+    } else if (contentType?.includes('multipart/form-data')) {
+      // Parse form data (e.g., for file uploads or form submissions)
+      body = await request.formData();
+    } else {
+      throw new Error('Unsupported content type');
+    }
 
-    form.parse(req, async (err, fields, files) => {
-      if (err) {
-        res.status(500).json({ message: 'Error parsing form data' });
-        return;
-      }
+    // Extract subject and text from body
+    const subject = body.get('subject');
+    const text = body.get('text');
 
-      try {
-        const from = Array.isArray(fields.from) ? fields.from[0] : fields.from;
-        const to = Array.isArray(fields.to) ? fields.to[0] : fields.to;
-        const subject = Array.isArray(fields.subject) ? fields.subject[0] : fields.subject;
-        const text = Array.isArray(fields.text) ? fields.text[0] : fields.text;
+    // Send email via Mailgun API
+    const data = {
+      from: `Potential Client <sandbox@${mailgunDomain}>`, // Double-check this
+      to: toEmail,
+      subject,
+      text,
+    };
 
-        if (!from || !to || !subject || !text) {
-          res.status(400).json({ message: 'Missing required fields' });
-          return;
-        }
+    console.log("Payload: ", data)
 
-        const data = {
-          from,
-          to,
-          subject,
-          text,
-        };
+    const response = await mg.messages.create(mailgunDomain || '', data);
 
-        const response = await mg.messages.create(process.env.MAILGUN_DOMAIN || '', data);
+    console.log('Mailgun Response:', response);
 
-        res.status(200).json({ message: 'Email sent successfully', response });
-      } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Error sending email' });
-      }
-    });
-  } else {
-    res.status(405).json({ message: 'Method Not Allowed' });
+    return NextResponse.json({ message: 'Email sent successfully' });
+  } catch (error: any) {
+    console.error('Error:', error);
+    return NextResponse.json({ message: 'Error sending email', error: error.message });
   }
 }
